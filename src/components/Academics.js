@@ -20,12 +20,7 @@ const Academics = () => {
       icon: "🎨",
       color: "bg-purple-100 text-purple-600"
     },
-    {
-      name: "School of Medicine",
-      programs: ["MBBS", "Nursing", "Pharmacy", "Physiotherapy"],
-      icon: "🏥",
-      color: "bg-red-100 text-red-600"
-    },
+  
     {
       name: "School of Law",
       programs: ["LLB", "LLM", "Corporate Law", "Criminal Law"],

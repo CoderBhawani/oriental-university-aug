@@ -1,6 +1,9 @@
 import React from 'react';
+import { useEnquiry } from './EnquiryContext';
 
 const HiringPartner = () => {
+  const { openEnquiryModal } = useEnquiry();
+
   const partners = [
     { name: 'Reliance', logo: '🏢' },
     { name: 'Mahindra', logo: '🚗' },
@@ -71,10 +74,16 @@ const HiringPartner = () => {
             Join thousands of successful graduates who have transformed their careers with our industry-focused training programs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition duration-300 btn-modern">
+            <button 
+              onClick={openEnquiryModal}
+              className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition duration-300 btn-modern"
+            >
               View Placement Records
             </button>
-            <button className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition duration-300">
+            <button 
+              onClick={openEnquiryModal}
+              className="border-2 border-primary-600 text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition duration-300"
+            >
               Talk to Career Counselor
             </button>
           </div>

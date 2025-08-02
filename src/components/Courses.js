@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
+import { useEnquiry } from './EnquiryContext';
 
 const Courses = () => {
+  const { openEnquiryModal } = useEnquiry();
+
   const courses = [
     {
       title: "Full Stack Development",
@@ -108,7 +111,10 @@ const Courses = () => {
                 ))}
               </div>
 
-              <button className="w-full bg-primary-600 text-white py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition duration-200 btn-modern">
+              <button 
+                onClick={openEnquiryModal}
+                className="w-full bg-primary-600 text-white py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition duration-200 btn-modern"
+              >
                 Enroll Now
               </button>
             </div>
@@ -124,7 +130,10 @@ const Courses = () => {
             <p className="text-gray-600 text-sm mb-4">
               We offer customized training programs for corporate and individual needs
             </p>
-            <button className="bg-primary-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition duration-200 btn-modern">
+            <button 
+              onClick={openEnquiryModal}
+              className="bg-primary-600 text-white px-6 py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition duration-200 btn-modern"
+            >
               Request Custom Course
             </button>
           </div>

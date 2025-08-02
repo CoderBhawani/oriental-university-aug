@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEnquiry } from './EnquiryContext';
 
 const Facilities = () => {
   const facilities = [
@@ -44,6 +45,8 @@ const Facilities = () => {
     }
   ];
 
+  const { openEnquiryModal } = useEnquiry();
+
   return (
     <section id="facilities" className="bg-gradient-to-b from-gray-50 to-white ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,7 +89,10 @@ const Facilities = () => {
               </div>
             </div>
             <div className="text-center lg:text-right">
-              <button className="bg-primary-600 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition duration-200 text-sm">
+              <button 
+                onClick={openEnquiryModal}
+                className="bg-primary-600 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition duration-200 text-sm"
+              >
                 Schedule Campus Tour
               </button>
               <p className="text-xs text-gray-500 mt-1">Free visit • No obligation</p>

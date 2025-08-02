@@ -1,40 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useEnquiry } from './EnquiryContext';
 
 const HomeBanner = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    courseInterest: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const message = `Hi! I'm interested in your courses.
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Course Interest: ${formData.courseInterest}
-Please contact me for more information.`;
-
-    const whatsappNumber = "1234567890"; // Replace with real number
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      courseInterest: ''
-    });
-  };
+  const { openEnquiryModal } = useEnquiry();
 
   return (
     <section id="home" className="pt-12 pb-4  bg-gradient-to-br from-blue-50 to-white">
@@ -47,12 +15,10 @@ Please contact me for more information.`;
               <p className="text-sm text-gray-500">Quick inquiry form</p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-2">
+            <form className="space-y-2">
               <input
                 type="text"
                 name="name"
-                value={formData.name}
-                onChange={handleChange}
                 required
                 className="w-full text-sm border border-gray-300 rounded-md px-3 py-2"
                 placeholder="Full Name"
@@ -60,8 +26,6 @@ Please contact me for more information.`;
               <input
                 type="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
                 required
                 className="w-full text-sm border border-gray-300 rounded-md px-3 py-2"
                 placeholder="Email Address"
@@ -69,8 +33,6 @@ Please contact me for more information.`;
               <input
                 type="tel"
                 name="phone"
-                value={formData.phone}
-                onChange={handleChange}
                 required
                 className="w-full text-sm border border-gray-300 rounded-md px-3 py-2"
                 placeholder="Phone Number"
@@ -78,17 +40,16 @@ Please contact me for more information.`;
               <input
                 type="text"
                 name="courseInterest"
-                value={formData.courseInterest}
-                onChange={handleChange}
                 required
                 className="w-full text-sm border border-gray-300 rounded-md px-3 py-2"
-                placeholder="Course You’re Interested In"
+                placeholder="Course You're Interested In"
               />
               <button
+               onClick={openEnquiryModal}
                 type="submit"
                 className="w-full text-sm bg-primary-600 text-white rounded-md px-4 py-2 hover:bg-primary-700"
               >
-                Send via WhatsApp
+                Submit
               </button>
             </form>
           </div>
@@ -108,10 +69,16 @@ Please contact me for more information.`;
             </div>
 
             <div className="flex flex-col sm:flex-row gap-2">
-              <button className="bg-primary-600 text-white px-5 py-2 rounded-md text-sm hover:bg-primary-700">
+              <button 
+                onClick={openEnquiryModal}
+                className="bg-primary-600 text-white px-5 py-2 rounded-md text-sm hover:bg-primary-700"
+              >
                 Explore Courses
               </button>
-              <button className="border border-primary-600 text-primary-600 px-5 py-2 rounded-md text-sm hover:bg-primary-50">
+              <button 
+                onClick={openEnquiryModal}
+                className="border border-primary-600 text-primary-600 px-5 py-2 rounded-md text-sm hover:bg-primary-50"
+              >
                 Watch Demo
               </button>
             </div>
@@ -141,53 +108,45 @@ Please contact me for more information.`;
                 <p className="text-sm text-gray-500">Fill the quick form</p>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-2">
+              <form className="space-y-2">
                 <input
                   type="text"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
-                  className="w-full text-sm border border-gray-300 rounded-md px-3 py-2"
+                  className="w-full border border-gray-300 rounded-md px-3 py-2"
                   placeholder="Full Name"
                 />
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
-                  className="w-full text-sm border border-gray-300 rounded-md px-3 py-2"
+                  className="w-full border border-gray-300 rounded-md px-3 py-2"
                   placeholder="Email Address"
                 />
                 <input
                   type="tel"
                   name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
                   required
-                  className="w-full text-sm border border-gray-300 rounded-md px-3 py-2"
+                  className="w-full border border-gray-300 rounded-md px-3 py-2"
                   placeholder="Phone Number"
                 />
                 <input
                   type="text"
                   name="courseInterest"
-                  value={formData.courseInterest}
-                  onChange={handleChange}
                   required
-                  className="w-full text-sm border border-gray-300 rounded-md px-3 py-2"
-                  placeholder="Course You’re Interested In"
+                  className="w-full border border-gray-300 rounded-md px-3 py-2"
+                  placeholder="Course You're Interested In"
                 />
                 <button
-                  type="submit"
-                  className="w-full text-sm bg-primary-600 text-white rounded-md px-4 py-2 hover:bg-primary-700"
-                >
-                  Send via WhatsApp
-                </button>
+  onClick={() =>
+    window.open('https://wa.me/918003057560', '_blank')
+  }
+  type="button"
+  className="w-full bg-primary-600 text-white rounded-md px-4 py-2 hover:bg-primary-700"
+>
+  Submit
+</button>
               </form>
-              <p className="text-center text-xs text-gray-400 mt-3">
-                We’ll help you choose the right path.
-              </p>
             </div>
           </div>
         </div>

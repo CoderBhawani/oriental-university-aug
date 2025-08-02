@@ -52,11 +52,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Popular Courses</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">Web Development</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">Data Science</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">Digital Marketing</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">UI/UX Design</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">Mobile Development</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">MBA</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">MCA</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">BBA</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">BBA</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-primary-400 transition duration-300">B.tech</a></li>
             </ul>
           </div>
 

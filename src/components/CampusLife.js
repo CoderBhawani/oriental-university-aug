@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useEnquiry } from './EnquiryContext';
 
 const CampusLife = () => {
   const campusFeatures = [
@@ -50,6 +51,8 @@ const CampusLife = () => {
     { name: "Literary Society", members: "140+", icon: "📖" },
     { name: "Sports Club", members: "300+", icon: "⚽" }
   ];
+
+  const { openEnquiryModal } = useEnquiry();
 
   // Scroll animation effect
   useEffect(() => {
@@ -168,10 +171,16 @@ const CampusLife = () => {
               Take a virtual tour of our beautiful campus or schedule an in-person visit to see what makes Karanvati University special.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200">
+              <button 
+                onClick={openEnquiryModal}
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200"
+              >
                 Virtual Campus Tour
               </button>
-              <button className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-200">
+              <button 
+                onClick={openEnquiryModal}
+                className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition duration-200"
+              >
                 Schedule Visit
               </button>
             </div>
