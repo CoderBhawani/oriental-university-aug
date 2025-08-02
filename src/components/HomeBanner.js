@@ -11,7 +11,7 @@ const HomeBanner = () => {
         <div className="lg:hidden mb-6">
           <div className="bg-white rounded-xl shadow-lg p-4">
             <div className="text-center mb-3">
-              <h2 className="text-base font-semibold text-gray-900">Get Started</h2>
+              <h2 className="text-base font-bold text-gray-900">Admission open</h2>
               <p className="text-sm text-gray-500">Quick inquiry form</p>
             </div>
 
@@ -104,7 +104,7 @@ const HomeBanner = () => {
           <div className="hidden lg:block">
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="text-center mb-4">
-                <h2 className="text-lg font-semibold text-gray-900">Get Started</h2>
+                <h2 className="text-lg font-bold text-gray-900">Admission Open 2025-26</h2>
                 <p className="text-sm text-gray-500">Fill the quick form</p>
               </div>
 
