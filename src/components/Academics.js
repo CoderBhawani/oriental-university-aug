@@ -47,6 +47,12 @@ const Academics = () => {
       icon: "🤝"
     },
     {
+      name: "School of Media & Communication",
+      programs: ["Journalism", "Mass Communication", "Digital Media", "Public Relations"],
+      icon: "🗞️",
+      color: "bg-red-100 text-red-600"
+    },
+    {
       title: "Global Exchange",
       description: "Student exchange programs with international universities",
       icon: "🌍"
@@ -146,7 +152,7 @@ const Academics = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16 animate-on-scroll"style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}>
+        <div className="text-center mt-16 animate-on-scroll">
           <div className="rounded-2xl p-8 text-white"style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}>
             <h3 className="text-2xl font-bold mb-4">Ready to Start Your Academic Journey?</h3>
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
