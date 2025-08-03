@@ -8,9 +8,9 @@ const Footer = () => {
           {/* University Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="p-2 rounded-lg" style={{ backgroundColor: '#FFF3EE' }}>
+              <div className="" >
                 <img
-                  src="/logo.jpeg"
+                  src="/Logo-White.png"
                   alt="Oriental University Logo"
                   className="h-8 w-8 object-contain"
                 />
