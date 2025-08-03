@@ -20,7 +20,6 @@ const Academics = () => {
       icon: "🎨",
       color: "bg-purple-100 text-purple-600"
     },
-
     {
       name: "School of Law",
       programs: ["LLB", "LLM", "Corporate Law", "Criminal Law"],
@@ -32,9 +31,16 @@ const Academics = () => {
       programs: ["Graphic Design", "Fashion Design", "Interior Design", "Architecture"],
       icon: "🎯",
       color: "bg-pink-100 text-pink-600"
-    }
+    },
+    {
+      name: "School of Media & Communication",
+      programs: ["Journalism", "Mass Communication", "Digital Media", "Public Relations"],
+      icon: "🗞️",
+      color: "bg-red-100 text-red-600"
+    },
+   
   ];
-
+  
   const academicFeatures = [
     {
       title: "Research Excellence",
@@ -47,12 +53,6 @@ const Academics = () => {
       icon: "🤝"
     },
     {
-      name: "School of Media & Communication",
-      programs: ["Journalism", "Mass Communication", "Digital Media", "Public Relations"],
-      icon: "🗞️",
-      color: "bg-red-100 text-red-600"
-    },
-    {
       title: "Global Exchange",
       description: "Student exchange programs with international universities",
       icon: "🌍"
@@ -61,8 +61,30 @@ const Academics = () => {
       title: "Expert Faculty",
       description: "World-class professors and industry professionals",
       icon: "👨‍🏫"
+    },
+    {
+      title: "Modern Campus",
+      description: "Smart classrooms, Wi-Fi enabled campus and digital infrastructure",
+      icon: "🏫"
+    },
+    {
+      title: "24/7 Library Access",
+      description: "Digital and physical library resources available around the clock",
+      icon: "📚"
+    },
+    {
+      title: "Innovation Hub",
+      description: "Incubation centers for startups and student-led projects",
+      icon: "🚀"
+    },
+    {
+      title: "On-Campus Accommodation",
+      description: "Fully furnished hostels with all modern amenities and 24/7 security",
+      icon: "🛏️"
     }
+    
   ];
+  
 
   // Scroll animation effect
   useEffect(() => {
@@ -142,7 +164,7 @@ const Academics = () => {
                     ))}
                   </div>
                   
-                  <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200 font-medium"style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}>
+                  <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200 font-medium"style={{ background: '#0A294D' }}>
                     Learn More
                   </button>
                 </div>
@@ -153,9 +175,9 @@ const Academics = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16 animate-on-scroll">
-          <div className="rounded-2xl p-8 text-white"style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}>
+          <div className="rounded-2xl p-8 text-black"style={{ backgroundColor: '#FFF3EE' }}>
             <h3 className="text-2xl font-bold mb-4">Ready to Start Your Academic Journey?</h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-black mb-6 max-w-2xl mx-auto">
               Join thousands of students who have chosen Karanvati University for their higher education. 
               Explore our programs and find the perfect fit for your career goals.
             </p>
@@ -163,7 +185,7 @@ const Academics = () => {
               <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-200">
                 Apply Now
               </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-200">
+              <button className="border-2 border-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-200">
                 Download Brochure
               </button>
             </div>

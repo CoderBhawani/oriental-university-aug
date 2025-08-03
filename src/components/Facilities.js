@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEnquiry } from './EnquiryContext';
 
-const Facilities = () => {
+const   Facilities = () => {
   const facilities = [
     {
       icon: '💻',
@@ -91,8 +91,8 @@ const Facilities = () => {
             <div className="text-center lg:text-right">
               <button 
                 onClick={openEnquiryModal}
-                style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
-                className="bg-primary-600 text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition duration-200 text-sm"
+                
+                className="bg-[#0A294D] text-white px-4 py-2 rounded-md font-medium hover:bg-primary-700 transition duration-200 text-sm"
               >
                 Schedule Campus Tour
               </button>

@@ -5,13 +5,13 @@ const HomeBanner = () => {
   const { openEnquiryModal } = useEnquiry();
 
   return (
-    <section id="home" className="pt-12 pb-4  bg-gradient-to-br from-blue-50 to-white">
+    <section id="home" className="pt-12 pb-4" style={{ backgroundColor: '#FFF3EE' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Mobile Form */}
         <div className="lg:hidden mb-6">
           <div className="bg-white rounded-xl shadow-lg p-4">
             <div className="text-center mb-3">
-              <h2 className="text-base font-bold text-gray-900">Admission open</h2>
+              <h2 className="text-base font-bold" style={{ color: '#333333' }}>Admission Open 2025-26</h2>
               <p className="text-sm text-gray-500">Quick inquiry form</p>
             </div>
 
@@ -48,7 +48,7 @@ const HomeBanner = () => {
                 onClick={openEnquiryModal}
                 type="submit"
                 className="w-full text-white rounded-md px-4 py-2 hover:opacity-90"
-                style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
+                style={{ backgroundColor: '#333333' }}
               >
                 Submit
               </button>
@@ -60,12 +60,12 @@ const HomeBanner = () => {
           {/* Left */}
           <div className="space-y-5">
             <div className="space-y-2">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
-                Transform Your Future with
-                <span className="text-primary-600 block">Quality Education</span>
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug" style={{ color: '#333333' }}>
+                Discover Excellence at
+                <span className="block" style={{ color: '#333333' }}>Oriental University</span>
               </h1>
               <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                Join thousands of students who have achieved their career goals through our comprehensive courses and expert guidance.
+                Embark on a transformative educational journey with our world-class programs, distinguished faculty, and state-of-the-art facilities designed to nurture tomorrow's leaders.
               </p>
             </div>
 
@@ -73,31 +73,31 @@ const HomeBanner = () => {
               <button 
                 onClick={openEnquiryModal}
                 className="text-white px-5 py-2 rounded-md text-sm hover:opacity-90"
-                style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
+                style={{ backgroundColor: '#0A294D' }}
               >
-                Explore Courses
+                Explore Programs
               </button>
               <button 
                 onClick={openEnquiryModal}
                 className="border text-white px-5 py-2 rounded-md text-sm hover:opacity-90"
-                style={{ borderColor: '#C73336', background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
+                style={{ borderColor: '#0A294D', backgroundColor: '#0A294D' }}
               >
-                Watch Demo
+                Campus Tour
               </button>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 pt-2">
               <div className="text-center">
-                <div className="text-xl font-bold" style={{ color: '#C73336' }}>10K+</div>
+                <div className="text-xl font-bold" style={{ color: '#333333' }}>15K+</div>
                 <div className="text-xs text-gray-600">Students</div>
               </div>
               <div className="text-center">
-                <div className="text-xl font-bold" style={{ color: '#C73336' }}>50+</div>
-                <div className="text-xs text-gray-600">Courses</div>
+                <div className="text-xl font-bold" style={{ color: '#333333' }}>75+</div>
+                <div className="text-xs text-gray-600">Programs</div>
               </div>
               <div className="text-center">
-                <div className="text-xl font-bold" style={{ color: '#C73336' }}>95%</div>
+                <div className="text-xl font-bold" style={{ color: '#333333' }}>98%</div>
                 <div className="text-xs text-gray-600">Success Rate</div>
               </div>
             </div>
@@ -107,8 +107,8 @@ const HomeBanner = () => {
           <div className="hidden lg:block">
             <div className="bg-white rounded-xl shadow-lg p-6">
               <div className="text-center mb-4">
-                <h2 className="text-lg font-bold text-gray-900">Admission Open 2025-26</h2>
-                <p className="text-sm text-gray-500">Fill the quick form</p>
+                <h2 className="text-lg font-bold" style={{ color: '#333333' }}>Admission Open 2025-26</h2>
+                <p className="text-sm text-gray-500">Begin your journey with us</p>
               </div>
 
               <form className="space-y-2">
@@ -142,11 +142,11 @@ const HomeBanner = () => {
                 />
                 <button
                   onClick={() =>
-                    window.open('https://wa.me/918003057560', '_blank')
+                    window.open('https://wa.me/917357057610', '_blank')
                   }
                   type="button"
                   className="w-full text-white rounded-md px-4 py-2 hover:opacity-90"
-                  style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
+                  style={{ backgroundColor: '#0A294D' }}
                 >
                   Submit
                 </button>

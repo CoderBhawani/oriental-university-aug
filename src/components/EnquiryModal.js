@@ -24,7 +24,7 @@ Phone: ${formData.phone}
 Course Interest: ${formData.courseInterest}
 Please contact me for more information.`;
 
-    const whatsappNumber = "8003057560";
+    const whatsappNumber = " 7357057610";
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 
