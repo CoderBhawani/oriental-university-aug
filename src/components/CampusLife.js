@@ -143,11 +143,11 @@ const CampusLife = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">500+</div>
+              <div className="text-3xl font-bold mb-2" style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}>500+</div>
               <div className="text-blue-200 text-sm">Acres Campus</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">50+</div>
+              <div className="text-3xl font-bold mb-2" style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}>50+</div>
               <div className="text-blue-200 text-sm">Student Clubs</div>
             </div>
             <div className="text-center">
@@ -173,7 +173,8 @@ const CampusLife = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={openEnquiryModal}
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200"
+                style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
+                className="text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-200"
               >
                 Virtual Campus Tour
               </button>

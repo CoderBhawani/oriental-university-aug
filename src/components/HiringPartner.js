@@ -48,17 +48,17 @@ const HiringPartner = () => {
         <div className="bg-white rounded-xl shadow-lg p-8 card-modern">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary-600">95%</div>
+              <div className="text-4xl font-bold text-primary-600"style={{ color: '#C73336' }}>95%</div>
               <div className="text-lg font-semibold text-gray-800">Placement Rate</div>
               <div className="text-gray-600">Students placed within 6 months</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary-600">₹8.5L</div>
+              <div className="text-4xl font-bold text-primary-600"style={{ color: '#C73336' }}>₹8.5L</div>
               <div className="text-lg font-semibold text-gray-800">Average Package</div>
               <div className="text-gray-600">Starting salary for our graduates</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-primary-600">500+</div>
+              <div className="text-4xl font-bold text-primary-600"style={{ color: '#C73336' }}>500+</div>
               <div className="text-lg font-semibold text-gray-800">Partner Companies</div>
               <div className="text-gray-600">Actively hiring our students</div>
             </div>
@@ -76,6 +76,7 @@ const HiringPartner = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={openEnquiryModal}
+              style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
               className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition duration-300 btn-modern"
             >
               View Placement Records

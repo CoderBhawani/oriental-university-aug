@@ -72,7 +72,7 @@ const About = () => {
               className="text-center bg-white rounded-lg p-4 border border-gray-200 animate-on-scroll card-modern"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="text-2xl font-bold text-primary-600 mb-1">{stat.number}</div>
+              <div className="text-2xl font-bold text-primary-600 mb-1" style={{ color: '#C73336' }}>{stat.number}</div>
               <div className="text-sm text-gray-600">{stat.label}</div>
             </div>
           ))}

@@ -45,9 +45,10 @@ const HomeBanner = () => {
                 placeholder="Course You're Interested In"
               />
               <button
-               onClick={openEnquiryModal}
+                onClick={openEnquiryModal}
                 type="submit"
-                className="w-full text-sm bg-primary-600 text-white rounded-md px-4 py-2 hover:bg-primary-700"
+                className="w-full text-white rounded-md px-4 py-2 hover:opacity-90"
+                style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
               >
                 Submit
               </button>
@@ -71,13 +72,15 @@ const HomeBanner = () => {
             <div className="flex flex-col sm:flex-row gap-2">
               <button 
                 onClick={openEnquiryModal}
-                className="bg-primary-600 text-white px-5 py-2 rounded-md text-sm hover:bg-primary-700"
+                className="text-white px-5 py-2 rounded-md text-sm hover:opacity-90"
+                style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
               >
                 Explore Courses
               </button>
               <button 
                 onClick={openEnquiryModal}
-                className="border border-primary-600 text-primary-600 px-5 py-2 rounded-md text-sm hover:bg-primary-50"
+                className="border text-white px-5 py-2 rounded-md text-sm hover:opacity-90"
+                style={{ borderColor: '#C73336', background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
               >
                 Watch Demo
               </button>
@@ -86,15 +89,15 @@ const HomeBanner = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 pt-2">
               <div className="text-center">
-                <div className="text-xl font-bold text-primary-600">10K+</div>
+                <div className="text-xl font-bold" style={{ color: '#C73336' }}>10K+</div>
                 <div className="text-xs text-gray-600">Students</div>
               </div>
               <div className="text-center">
-                <div className="text-xl font-bold text-primary-600">50+</div>
+                <div className="text-xl font-bold" style={{ color: '#C73336' }}>50+</div>
                 <div className="text-xs text-gray-600">Courses</div>
               </div>
               <div className="text-center">
-                <div className="text-xl font-bold text-primary-600">95%</div>
+                <div className="text-xl font-bold" style={{ color: '#C73336' }}>95%</div>
                 <div className="text-xs text-gray-600">Success Rate</div>
               </div>
             </div>
@@ -138,14 +141,15 @@ const HomeBanner = () => {
                   placeholder="Course You're Interested In"
                 />
                 <button
-  onClick={() =>
-    window.open('https://wa.me/918003057560', '_blank')
-  }
-  type="button"
-  className="w-full bg-primary-600 text-white rounded-md px-4 py-2 hover:bg-primary-700"
->
-  Submit
-</button>
+                  onClick={() =>
+                    window.open('https://wa.me/918003057560', '_blank')
+                  }
+                  type="button"
+                  className="w-full text-white rounded-md px-4 py-2 hover:opacity-90"
+                  style={{ background: 'linear-gradient(to right, #C73336, #A02B2E)' }}
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </div>
