@@ -8,6 +8,7 @@ import About from './components/About';
 import HiringPartner from './components/HiringPartner';
 import Footer from './components/Footer';
 import Academics from './components/Academics';
+import Academics from './components/FloatingActionButtons';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Facilities />
         <About />
         <HiringPartner />
+     <FloatingActionButtons />
         <Footer />
       </div>
     </EnquiryProvider>
