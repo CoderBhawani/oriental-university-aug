@@ -2,14 +2,14 @@ import React from 'react';
 
 const FloatingActionButtons = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "919024160266"; // Using the number from footer
-    const message = "Hello! I'm interested in learning more about COER University programs.";
+    const phoneNumber = "917357057610"; // Using the number from footer
+    const message = "Hello! I'm interested in learning more about Oriental University programs.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleCallClick = () => {
-    window.location.href = "tel:+919024160266";
+    window.location.href = "tel:+917357057610";
   };
 
   return (
